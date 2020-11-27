@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "browserslist",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include":  "#storage"
+		},
+		{
+			"include":  "#variable"
+		},
+		{
+			"include":  "#keywords"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#percents"
+		},
+		{
+			"include": "#operators"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.line.number-sign",
+			"match": "#(.*)$"
+		},
+		"storage": {
+			"name": "storage.type.mode",
+			"match": "^\\[(\\w*)\\]$"
+		},
+		"variable": {
+			"name": "variable.other",
+			"match": "(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|IE|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|OperaMini|Opera|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)"
+		},
+		"keywords": {
+			"name": "keyword.control",
+			"match": "\\b(not|and|or|extend|(, ))\\b"
+		},
+		"constant": {
+			"name": "constant.language",
+			"match": "\\b(ESR|TP|all)\\b"
+		},
+		"number": {
+			"name": "constant.numeric",
+			"match": "\\d+"
+		},
+		"percents": {
+			"name": "constant.numeric",
+			"match": "%"
+		},
+		"operators": {
+			"name": "keyword.operator",
+			"match": "(>=|<=|>|<)"
+		}
+	},
+	"scopeName": "browserslist"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "browserslist-syntax",
+    "displayName": "browserslist-syntax",
+    "description": "This extension provides a syntax highlighting for .browserslistrc and browserslist files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "browserslist",
+            "aliases": ["browserslist"],
+            "extensions": ["browserslistrc"],
+            "filenames": ["browserslist"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "browserslist",
+            "scopeName": "browserslist",
+            "path": "./syntaxes/browserslist.tmLanguage.json"
+        }]
+    }
+}
