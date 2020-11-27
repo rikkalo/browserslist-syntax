@@ -38,7 +38,7 @@
 		},
 		"variable": {
 			"name": "variable.other",
-			"match": "(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|IE|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|OperaMini|Opera|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)"
+			"match": "\\b(Android|Baidu|BlackBerry|bb|Chrome|ChromeAndroid|and_chr|Edge|Electron|Explorer|IE|ie|ExplorerMobile|ie_mob|Firefox|ff|FirefoxAndroid|and_ff|iOS|ios_saf|Node|OperaMini|Opera|op_mini|OperaMobile|op_mob|QQAndroid|and_qq|Safari|Samsung|UCAndroid|and_uc|kaios)\\b"
 		},
 		"keywords": {
 			"name": "keyword.control",
@@ -50,14 +50,14 @@
 		},
 		"number": {
 			"name": "constant.numeric",
-			"match": "\\d+"
+			"match": "\\b\\d+\\b"
 		},
 		"percents": {
 			"name": "constant.numeric",
 			"match": "%"
 		},
 		"operators": {
-			"name": "keyword.operator",
+			"name": "keyword.control",
 			"match": "(>=|<=|>|<)"
 		}
 	},
